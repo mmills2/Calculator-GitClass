@@ -23,7 +23,11 @@ public class Calculator {
         } else if (operation.equalsIgnoreCase("multiply")) {
             System.out.println(num1 * num2);
         } else {
-            System.out.println(num1 / num2);
+            if (num2 != 0) {
+                System.out.println(num1 / num2);
+            } else {
+                System.out.println("Error: Divide by Zero");
+            }
         }
 
     }
