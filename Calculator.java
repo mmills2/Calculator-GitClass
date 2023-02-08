@@ -8,18 +8,23 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter two whole numbers");
 
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
+        double num1 = scanner.nextDouble();
+        double num2 = scanner.nextDouble();
 
-        System.out.println("Would you like to add or subtract");
+        System.out.println("Would you like to add, subtract, multiply, or divide");
 
         scanner.nextLine(); // for the /n after .nextInt()
         String operation = scanner.nextLine();
 
         if (operation.equalsIgnoreCase("add")) {
             System.out.println(num1 + num2);
-        } else {
+        } else if (operation.equalsIgnoreCase("subtract")) {
             System.out.println(num1 - num2);
+        } else if (operation.equalsIgnoreCase("multiply")) {
+            System.out.println(num1 * num2);
+        } else {
+            System.out.println(num1 / num2);
         }
+
     }
 }
