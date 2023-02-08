@@ -8,8 +8,8 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter two whole numbers");
 
-        double num1 = scanner.nextDouble();
-        double num2 = scanner.nextDouble();
+        float num1 = scanner.nextFloat();
+        float num2 = scanner.nextFloat();
 
         System.out.println("Would you like to add, subtract, multiply, or divide");
 
